@@ -804,6 +804,8 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 0;
+
+  transition: color 250ms var(--time-transition);
 }
 
 .modal-submit-btn {
@@ -832,6 +834,14 @@ footer {
 
   background-color: var(--logo-color);
   border-radius: 4px;
+
+  transition: box-shadow 250ms var(--time-transition);
+}
+.modal-submit-btn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal-submit-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .close-icon {
   fill: currentColor;
@@ -840,18 +850,16 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .modal-close-btn:focus,
 .modal-close-btn:hover {
   color: var(--logo-color);
   outline: transparent;
+  
 }
-
 .modal-form {
   padding-left: 40px;
   padding-right: 40px;
 }
-
 .modal-text {
   margin: 0;
   padding-top: 40px;
@@ -866,7 +874,6 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 .modal-label {
   display: flex;
   flex-direction: column;
@@ -882,31 +889,29 @@ footer {
   position: relative;
   margin-top: 4px;
 }
-
 .modal-input {
   width: 100%;
-  padding-left: 30px;
+  padding-left: 45px;
   height: 40px;
   margin: 0;
 
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
+  
   transition: outline 250ms var(--time-transition),
   border 250ms var(--time-transition);
 }
-
 .modal-icon {
   position: absolute;
   top: 50%;
   left: 15px;
+  
   transform: translateY(-50%);
-  fill: #000;
-
+  fill: var(--peculiarity-color);
+  
   transition: fill 250ms var(--time-transition);
 }
-
 .modal-input:focus + .modal-icon {
   fill: var(--logo-color);
 }
@@ -944,9 +949,22 @@ textarea.modal-input {
   align-items: center;
   justify-content: center;
 }
-
+.modal-checkbox-text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
 .modal-checkbox-link {
   color: var(--logo-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
 }
 
 .modal-icon-checkbox {
